@@ -1,0 +1,14 @@
+.welcome {
+  max-width: 1260px;
+  height: 840px;
+  background-image: url('../images/welcome.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome__header {
+  margin-top: 52px;
+}
