@@ -1,11 +1,23 @@
 @import 'variables';
 
 .header {
-  max-width: 1020px;
-  height: 65px;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: 24px;
+  max-width: 1260px;
+  height: 840px;
+  background-image: url('../images/welcome.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__top {
+    max-width: 1020px;
+    height: 65px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 24px;
+    margin-top: 52px;
+  }
 
   &__logo {
     width: 85px;
@@ -39,21 +51,20 @@
     align-content: center;
   }
 
-  &__item {
+  &__link {
+    display: block;
     width: 32px;
     height: 32px;
     margin: 0;
     background-repeat: no-repeat;
     background-position: center;
 
-    &-contact {
+    &--contact {
       background-image: url('../images/phone.svg');
-      grid-column: 1;
     }
 
-    &-menu {
+    &--menu {
       background-image: url('../images/menu.svg');
-      grid-column: 2;
     }
   }
 }
