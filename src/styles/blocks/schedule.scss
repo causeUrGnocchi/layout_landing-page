@@ -2,7 +2,7 @@
   max-width: 1020px;
   font-family: $default-font;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: $gutter-width;
 
   &__header {
@@ -21,7 +21,21 @@
     margin: 0;
     font-size: 48px;
     font-weight: 700;
+    letter-spacing: -1.5px;
     line-height: 48px;
+  }
+
+  &__content {
+    grid-column: 6 / 13;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__branch {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 
   &__branch-name {
@@ -29,6 +43,21 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+  }
+
+  &__table {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__holidays {
+    margin: 0;
   }
 
   &__info {

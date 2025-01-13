@@ -1,0 +1,20 @@
+.exhibitions {
+  max-width: 1020px;
+  font-family: $default-font;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: $gutter-width;
+
+  &__header {
+    grid-column: 4 / 10;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    grid-column: 4 / 10;
+  }
+}

@@ -1,22 +1,24 @@
 @import 'variables';
 
 .header {
-  max-width: 1260px;
+  max-width: 1020px;
   height: 840px;
+  padding: 0 120px;
+  font-family: $default-font;
   background-image: url('../images/welcome.png');
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
 
   &__top {
     max-width: 1020px;
     height: 65px;
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    column-gap: 24px;
+    display: flex;
+    justify-content: space-between;
     margin-top: 52px;
+    grid-column: 1 / 13;
   }
 
   &__logo {
@@ -26,29 +28,23 @@
     font-size: 40px;
     font-family: $default-font;
     font-weight: 700;
+    letter-spacing: -1.5px;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    grid-column: 1;
   }
 
-  &__nav {
-    grid-column: 11 / 13;
-    display: grid;
-    grid-template-columns: subgrid;
-    column-gap: 24px;
-  }
-
-  &__list {
+  &__links {
     list-style-type: none;
-    grid-column: 1 / 3;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: subgrid;
-    column-gap: 24px;
-    justify-items: end;
+    display: flex;
+    column-gap: 55px;
     align-content: center;
+  }
+
+  &__link--contact-wrapper {
+    position: relative;
   }
 
   &__link {
@@ -66,5 +62,42 @@
     &--menu {
       background-image: url('../images/menu.svg');
     }
+  }
+
+  &__contacts {
+    width: 201px;
+    height: 116px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: -42px;
+    right: 48px;
+  }
+
+  &__contact {
+    margin: 0;
+    font-family: $default-font;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
+    line-height: 27px;
+  }
+
+  &__link--contact:hover + &__contacts {
+    opacity: 1;
+  }
+
+  &__title {
+    margin: 83px 0 0;
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 80px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    grid-column: 4 / 10;
   }
 }
