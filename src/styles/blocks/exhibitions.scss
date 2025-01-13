@@ -6,15 +6,64 @@
   column-gap: $gutter-width;
 
   &__header {
+    display: grid;
+    grid-template-columns: subgrid;
     grid-column: 4 / 10;
   }
 
   &__title {
+    margin: 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -1.5px;
     text-align: center;
-    grid-column: 4 / 10;
+    grid-column: 1 / 7;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: Cinzel;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    grid-column: 2 / 6;
+  }
+
+  &__exhibition {
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: subgrid;
+    margin-top: 48px;
+  }
+
+  &__image,
+  &__image--double {
+    display: inline-block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    grid-column: span 4;
+  }
+
+  &__image--double {
+    grid-column: span 8;
+  }
+
+  &__info {
+    margin: 24px 0 0 0;
+    grid-column: 1 / 13;
+  }
+
+  &__name {
+    font-family: Cinzel;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $accent-main;
   }
 }
