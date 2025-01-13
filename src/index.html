@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  class="page"
+  lang="en"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -16,21 +19,44 @@
       defer
     ></script>
   </head>
-  <body class="body">
-    <section class="body__welcome welcome">
-      <header class="welcome__header header">
+  <body class="page__body">
+    <header class="header page__header">
+      <div class="header__top">
         <p class="header__logo">the met</p>
         <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item header__item-contact"></li>
-            <li class="header__item header__item-menu"></li>
+          <ul class="header__links">
+            <li class="header__link--contact-wrapper">
+              <a
+                class="header__link header__link--contact"
+                href="#menu"
+              ></a>
+              <div class="header__contacts">
+                <p class="header__contact">
+                  The Met Fifth Avenue
+                  <br />
+                  +1 212-535-7710
+                </p>
+                <p class="header__contact">
+                  The Met Cloisters
+                  <br />
+                  +1 212-923-3700
+                </p>
+              </div>
+            </li>
+            <li>
+              <a
+                class="header__link header__link--menu"
+                href="#menu"
+              ></a>
+            </li>
           </ul>
         </nav>
-      </header>
-    </section>
-    <section class="body__schedule schedule">
+      </div>
+      <h1 class="header__title">Welcome to The MET</h1>
+    </header>
+    <section class="schedule page__schedule">
       <header class="schedule__header">
-        <h4 class="schedule__subtitle">Plan your visit</h4>
+        <p class="schedule__subtitle">Plan your visit</p>
         <h2 class="schedule__title">Museum hours</h2>
       </header>
       <div class="schedule__content">
@@ -38,32 +64,51 @@
           <h3 class="schedule__branch-name">The Met Fifth Avenue</h3>
           <div class="schedule__table">
             <div class="schedule__column">
-              <span class="schedule__info--bold">
-                10 am - 5 pm
-              </span>
-              <span class="schedule__info--bold">
-                10 am - 9 pm
-              </span>
-              <span class="schedule__info--bold">
-                Closed
-              </span>
+              <span class="schedule__info--bold">10 am - 5 pm</span>
+              <span class="schedule__info--bold">10 am - 9 pm</span>
+              <span class="schedule__info--bold">Closed</span>
             </div>
             <div class="schedule__column">
-              <span class="schedule__info">
-                Sun, Mon, Tue, Thu
-              </span>
-              <span class="schedule__info">
-                Fri, Sat
-              </span>
-              <span class="schedule__info">
-                Wen
-              </span>
+              <span class="schedule__info">Sun, Mon, Tue, Thu</span>
+              <span class="schedule__info">Fri, Sat</span>
+              <span class="schedule__info">Wen</span>
             </div>
           </div>
-          <span class="schedule__info--bold">Closed on</span>
-          <span class="schedule__info">Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.</span>
+          <p class="schedule__holidays">
+            <span class="schedule__info--bold">Closed on</span>
+            <br />
+            <span class="schedule__info">
+              Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+            </span>
+          </p>
+        </div>
+        <div class="schedule__branch">
+          <h3 class="schedule__branch-name">The Met Cloisters</h3>
+          <div class="schedule__table">
+            <div class="schedule__column">
+              <span class="schedule__info--bold">10 am – 4.30 pm</span>
+              <span class="schedule__info--bold">Closed</span>
+            </div>
+            <div class="schedule__column">
+              <span class="schedule__info">Thu - Tue</span>
+              <span class="schedule__info">Wen</span>
+            </div>
+          </div>
+          <p class="schedule__holidays">
+            <span class="schedule__info--bold">Closed on</span>
+            <br />
+            <span class="schedule__info">Thanksgiving Day, Dec 25, Jan 1</span>
+          </p>
         </div>
       </div>
+    </section>
+    <section class="exhibitions page__exhibitions">
+      <header class="exhibitions__header">
+        <h2 class="exhibitons__title">Now On View</h2>
+        <p class="exhibitions__subtitle">
+          Explore exhibition gallery guides, videos, articles, and more.
+        </p>
+      </header>
     </section>
   </body>
 </html>

@@ -1,45 +1,74 @@
 .schedule {
-    max-width: 1020px;
-    font-family: $default-font;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: $gutter-width;
+  max-width: 1020px;
+  font-family: $default-font;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: $gutter-width;
 
-    &__header {
-        grid-column: 1 / 6;
-    }
+  &__header {
+    grid-column: 1 / 6;
+  }
 
-    &__subtitle {
-        margin: 0;
-        font-size: 12px;
-        font-weight: 700;
-        color: $accent-main;
-        line-height: 16.8px;
-    }
+  &__subtitle {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: $accent-main;
+    line-height: 16.8px;
+  }
 
-    &__title {
-        margin: 0;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 48px;
-    }
+  &__title {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 48px;
+  }
 
-    &__branch-name {
-        margin: 0;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 30px;
-    }
+  &__content {
+    grid-column: 6 / 13;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 
-    &__info {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 27px;
-    }
+  &__branch {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-    &__info--bold {
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 27px;
-    }
+  &__branch-name {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__table {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__holidays {
+    margin: 0;
+  }
+
+  &__info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  &__info--bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+  }
 }
