@@ -1,16 +1,23 @@
-@import 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap';
+.page {
+  &__body {
+    margin: 0;
+  }
 
-.page__body {
-  margin: 0;
-}
+  &__container {
+    max-width: 1260px;
+    margin: auto;
+  }
 
-.page__header,
-.page__schedule,
-.page__exhibitions {
-  margin: auto;
-}
+  &__header,
+  &__schedule,
+  &__exhibitions,
+  &__online-content {
+    margin: auto;
+  }
 
-.page__schedule,
-.page__exhibitions {
-  margin-top: 140px;
+  &__schedule,
+  &__exhibitions,
+  &__online-content {
+    margin-top: 140px;
+  }
 }

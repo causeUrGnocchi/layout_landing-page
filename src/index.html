@@ -20,161 +20,205 @@
     ></script>
   </head>
   <body class="page__body">
-    <header class="header page__header">
-      <div class="header__top">
-        <p class="header__logo">the met</p>
-        <nav class="header__nav">
-          <ul class="header__links">
-            <li class="header__link--contact-wrapper">
-              <a
-                class="header__link header__link--contact"
-                href="#menu"
-              ></a>
-              <div class="header__contacts">
-                <p class="header__contact">
-                  The Met Fifth Avenue
-                  <br />
-                  +1 212-535-7710
-                </p>
-                <p class="header__contact">
-                  The Met Cloisters
-                  <br />
-                  +1 212-923-3700
-                </p>
-              </div>
-            </li>
-            <li>
-              <a
-                class="header__link header__link--menu"
-                href="#menu"
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <h1 class="header__title">Welcome to The MET</h1>
-    </header>
-    <section class="schedule page__schedule">
-      <header class="schedule__header">
-        <p class="schedule__subtitle">Plan your visit</p>
-        <h2 class="schedule__title">Museum hours</h2>
+    <div class="page__container">
+      <header class="header page__header">
+        <div class="header__top">
+          <p class="header__logo">the met</p>
+          <nav class="header__nav">
+            <ul class="header__links">
+              <li class="header__link--contact-wrapper">
+                <a
+                  class="header__link header__link--contact"
+                  href="#menu"
+                ></a>
+                <div class="header__contacts">
+                  <p class="header__contact">
+                    The Met Fifth Avenue
+                    <br />
+                    +1 212-535-7710
+                  </p>
+                  <p class="header__contact">
+                    The Met Cloisters
+                    <br />
+                    +1 212-923-3700
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a
+                  class="header__link header__link--menu"
+                  href="#menu"
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="header__title">Welcome to The MET</h1>
       </header>
-      <div class="schedule__content">
-        <div class="schedule__branch">
-          <h3 class="schedule__branch-name">The Met Fifth Avenue</h3>
-          <div class="schedule__table">
-            <div class="schedule__column">
-              <span class="schedule__info--bold">10 am - 5 pm</span>
-              <span class="schedule__info--bold">10 am - 9 pm</span>
-              <span class="schedule__info--bold">Closed</span>
+      <section class="schedule page__schedule">
+        <header class="schedule__header">
+          <p class="schedule__subtitle">Plan your visit</p>
+          <h2 class="schedule__title">Museum hours</h2>
+        </header>
+        <div class="schedule__content">
+          <div class="schedule__branch">
+            <h3 class="schedule__branch-name">The Met Fifth Avenue</h3>
+            <div class="schedule__table">
+              <div class="schedule__column">
+                <span class="schedule__info--bold">10 am - 5 pm</span>
+                <span class="schedule__info--bold">10 am - 9 pm</span>
+                <span class="schedule__info--bold">Closed</span>
+              </div>
+              <div class="schedule__column">
+                <span class="schedule__info">Sun, Mon, Tue, Thu</span>
+                <span class="schedule__info">Fri, Sat</span>
+                <span class="schedule__info">Wen</span>
+              </div>
             </div>
-            <div class="schedule__column">
-              <span class="schedule__info">Sun, Mon, Tue, Thu</span>
-              <span class="schedule__info">Fri, Sat</span>
-              <span class="schedule__info">Wen</span>
-            </div>
+            <p class="schedule__holidays">
+              <span class="schedule__info--bold">Closed on</span>
+              <br />
+              <span class="schedule__info">
+                Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+              </span>
+            </p>
           </div>
-          <p class="schedule__holidays">
-            <span class="schedule__info--bold">Closed on</span>
+          <div class="schedule__branch">
+            <h3 class="schedule__branch-name">The Met Cloisters</h3>
+            <div class="schedule__table">
+              <div class="schedule__column">
+                <span class="schedule__info--bold">10 am – 4.30 pm</span>
+                <span class="schedule__info--bold">Closed</span>
+              </div>
+              <div class="schedule__column">
+                <span class="schedule__info">Thu - Tue</span>
+                <span class="schedule__info">Wen</span>
+              </div>
+            </div>
+            <p class="schedule__holidays">
+              <span class="schedule__info--bold">Closed on</span>
+              <br />
+              <span class="schedule__info">
+                Thanksgiving Day, Dec 25, Jan 1
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="exhibitions page__exhibitions">
+        <header class="exhibitions__header">
+          <h2 class="exhibitions__title">Now On View</h2>
+          <p class="exhibitions__subtitle exhibitions__text">
+            Explore exhibition gallery guides, videos, articles, and more.
+          </p>
+        </header>
+        <div class="exhibitions__exhibition">
+          <img
+            class="exhibitions__image exhibitions__image--double"
+            src="./images/european-paintings.png"
+            alt="collection of european paintings"
+          />
+          <img
+            class="exhibitions__image"
+            src="./images/european-portrait.png"
+            alt="black and white portrait"
+          />
+          <p class="exhibitions__info">
+            <span class="exhibitions__name">A New Look at Old Masters</span>
             <br />
-            <span class="schedule__info">
-              Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+            <span class="exhibitions__text">
+              December 12, 2020 – Through Spring 2023
             </span>
           </p>
         </div>
-        <div class="schedule__branch">
-          <h3 class="schedule__branch-name">The Met Cloisters</h3>
-          <div class="schedule__table">
-            <div class="schedule__column">
-              <span class="schedule__info--bold">10 am – 4.30 pm</span>
-              <span class="schedule__info--bold">Closed</span>
-            </div>
-            <div class="schedule__column">
-              <span class="schedule__info">Thu - Tue</span>
-              <span class="schedule__info">Wen</span>
-            </div>
-          </div>
-          <p class="schedule__holidays">
-            <span class="schedule__info--bold">Closed on</span>
+        <div class="exhibitions__exhibition">
+          <img
+            class="exhibitions__image"
+            src="./images/buddhist-entity-1.png"
+            alt="buddhist entity"
+          />
+          <img
+            class="exhibitions__image"
+            src="./images/buddhist-mosaic.png"
+            alt="buddhist mosaic"
+          />
+          <img
+            class="exhibitions__image"
+            src="./images/buddhist-entity-2.png"
+            alt="buddhist entity"
+          />
+          <p class="exhibitions__info">
+            <span class="exhibitions__name">
+              Bodhisattvas of Wisdom, Compassion, and Power
+            </span>
             <br />
-            <span class="schedule__info">Thanksgiving Day, Dec 25, Jan 1</span>
+            <span class="exhibitions__text">
+              March 27, 2021 – October 30, 2022
+            </span>
           </p>
         </div>
-      </div>
-    </section>
-    <section class="exhibitions page__exhibitions">
-      <header class="exhibitions__header">
-        <h2 class="exhibitions__title">Now On View</h2>
-        <p class="exhibitions__subtitle exhibitions__text">
-          Explore exhibition gallery guides, videos, articles, and more.
-        </p>
-      </header>
-      <div class="exhibitions__exhibition">
-        <img
-          class="exhibitions__image exhibitions__image--double"
-          src="./images/european-paintings.png"
-          alt="collection of european paintings"
-        />
-        <img
-          class="exhibitions__image"
-          src="./images/european-portrait.png"
-          alt="black and white portrait"
-        />
-        <p class="exhibitions__info">
-          <span class="exhibitions__name">A New Look at Old Masters</span>
-          <br />
-          <span class="exhibitions__text">
-            December 12, 2020 – Through Spring 2023
-          </span>
-        </p>
-      </div>
-      <div class="exhibitions__exhibition">
-        <img
-          class="exhibitions__image"
-          src="./images/buddhist-entity-1.png"
-          alt="buddhist entity"
-        />
-        <img
-          class="exhibitions__image"
-          src="./images/buddhist-mosaic.png"
-          alt="buddhist mosaic"
-        />
-        <img
-          class="exhibitions__image"
-          src="./images/buddhist-entity-2.png"
-          alt="buddhist entity"
-        />
-        <p class="exhibitions__info">
-          <span class="exhibitions__name">
-            Bodhisattvas of Wisdom, Compassion, and Power
-          </span>
-          <br />
-          <span class="exhibitions__text">
-            March 27, 2021 – October 30, 2022
-          </span>
-        </p>
-      </div>
-      <div class="exhibitions__exhibition">
-        <img
-          class="exhibitions__image"
-          src="./images/french-clocks.png"
-          alt="french clocks hangin on a wall"
-        />
-        <img
-          class="exhibitions__image--double"
-          src="./images/french-statues.png"
-          alt="statues of two people dancing"
-        />
-        <p class="exhibitions__info">
-          <span class="exhibitions__name">
-            Inspiring Walt Disney: The Animation of French Decorative Arts
-          </span>
-          <br />
-          <span class="exhibitions__text">
-            December 10, 2021 – March 6, 2022
-          </span>
-        </p>
-      </div>
-    </section>
+        <div class="exhibitions__exhibition">
+          <img
+            class="exhibitions__image"
+            src="./images/french-clocks.png"
+            alt="french clocks hangin on a wall"
+          />
+          <img
+            class="exhibitions__image--double"
+            src="./images/french-statues.png"
+            alt="statues of two people dancing"
+          />
+          <p class="exhibitions__info">
+            <span class="exhibitions__name">
+              Inspiring Walt Disney: The Animation of French Decorative Arts
+            </span>
+            <br />
+            <span class="exhibitions__text">
+              December 10, 2021 – March 6, 2022
+            </span>
+          </p>
+        </div>
+        <button class="exhibitions__view-all">View all exhibitions</button>
+      </section>
+      <section class="online-content page__online-content">
+        <h2 class="online-content__title">More to Explore Online</h2>
+        <div class="online-content__item">
+          <img
+            class="online-content__image"
+            src="./images/mannequins.png"
+            alt="three mannequins positioned shoulder-to-shoulder"
+          />
+          <p class="online-content__name">Collection Areas</p>
+          <p class="online-content__description">
+            These collection areas study, exhibit, and care for the objects in
+            The Met collection.
+          </p>
+        </div>
+        <div class="online-content__item">
+          <img
+            class="online-content__image"
+            src="./images/sarcophagi.png"
+            alt="sarcophagi"
+          />
+          <p class="online-content__name">Travel</p>
+          <p class="online-content__description">
+            Travel with The Met connects the Museum's wide and diverse audience
+            to art, inspiration, and historical perspective.
+          </p>
+        </div>
+        <div class="online-content__item">
+          <img
+            class="online-content__image"
+            src="./images/painting.png"
+            alt="two individuals appreciating a painting at a museum"
+          />
+          <p class="online-content__name">Virtual group tours</p>
+          <p class="online-content__description">
+            Request a guided tour, reserve admission and lead your own small
+            group, or request a live virtual tour led by a Museum guide.
+          </p>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
