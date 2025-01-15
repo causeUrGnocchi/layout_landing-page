@@ -1,10 +1,11 @@
 .online-content {
-  max-width: 1020px;
-  padding: 0 120px;
+  box-sizing: border-box;
+  max-width: $max-width;
+  padding: 0 $margin-width;
   font-family: $default-font;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 48px 24px;
+  column-gap: $gutter-width;
 
   &__title {
     margin: 0;
@@ -16,7 +17,17 @@
     grid-column: 4 / 10;
   }
 
+  &__list {
+    padding: 0;
+    grid-column: 1 / 13;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: subgrid;
+    margin-top: 48px;
+  }
+
   &__item {
+    padding: 0;
     grid-column: span 4;
     display: flex;
     flex-direction: column;

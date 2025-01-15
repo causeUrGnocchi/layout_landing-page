@@ -182,76 +182,117 @@
       </section>
       <section class="online-content page__online-content">
         <h2 class="online-content__title">More to Explore Online</h2>
-        <div class="online-content__item">
-          <img
-            class="online-content__image"
-            src="./images/mannequins.png"
-            alt="three mannequins positioned shoulder-to-shoulder"
-          />
-          <p class="online-content__name">Collection Areas</p>
-          <p class="online-content__description">
-            These collection areas study, exhibit, and care for the objects in
-            The Met collection.
-          </p>
-        </div>
-        <div class="online-content__item">
-          <img
-            class="online-content__image"
-            src="./images/sarcophagi.png"
-            alt="sarcophagi"
-          />
-          <p class="online-content__name">Travel</p>
-          <p class="online-content__description">
-            Travel with The Met connects the Museum's wide and diverse audience
-            to art, inspiration, and historical perspective.
-          </p>
-        </div>
-        <div class="online-content__item">
-          <img
-            class="online-content__image"
-            src="./images/painting.png"
-            alt="two individuals appreciating a painting at a museum"
-          />
-          <p class="online-content__name">Virtual group tours</p>
-          <p class="online-content__description">
-            Request a guided tour, reserve admission and lead your own small
-            group, or request a live virtual tour led by a Museum guide.
-          </p>
-        </div>
+        <ul class="online-content__list">
+          <li class="online-content__item">
+            <img
+              class="online-content__image"
+              src="./images/mannequins.png"
+              alt="three mannequins positioned shoulder-to-shoulder"
+            />
+            <p class="online-content__name">Collection Areas</p>
+            <p class="online-content__description">
+              These collection areas study, exhibit, and care for the objects in
+              The Met collection.
+            </p>
+          </li>
+          <li class="online-content__item">
+            <img
+              class="online-content__image"
+              src="./images/sarcophagi.png"
+              alt="sarcophagi"
+            />
+            <p class="online-content__name">Travel</p>
+            <p class="online-content__description">
+              Travel with The Met connects the Museum's wide and diverse
+              audience to art, inspiration, and historical perspective.
+            </p>
+          </li>
+          <li class="online-content__item">
+            <img
+              class="online-content__image"
+              src="./images/painting.png"
+              alt="two individuals appreciating a painting at a museum"
+            />
+            <p class="online-content__name">Virtual group tours</p>
+            <p class="online-content__description">
+              Request a guided tour, reserve admission and lead your own small
+              group, or request a live virtual tour led by a Museum guide.
+            </p>
+          </li>
+        </ul>
       </section>
-      <section class="contacts">
+      <section class="contacts page__contacts">
         <h2 class="contacts__title">Contact us</h2>
-        <div class="contacts__branch">
-          <p class="contacts__name">The Met Fifth Avenue</p>
-          <p class="contacts__field">
-            <span class="contacts__label">Phone</span>
-            <span class="contacts__value">+1 212-535-7710</span>
-          </p>
-          <p class="contacts__field">
-            <span class="contacts__label">Address</span>
-            <span class="contacts__value">
-              1000 Fifth Avenue
-              <br />
-              New York, NY 10028
-            </span>
-          </p>
-        </div>
-        <div class="contacts__branch">
-          <p class="contacts__name">The Met Cloisters</p>
-          <p class="contacts__field">
-            <span class="contacts__label">Phone</span>
-            <span class="contacts__value">+1 212-923-3700</span>
-          </p>
-          <p class="contacts__field">
-            <span class="contacts__label">Address</span>
-            <span class="contacts__value">
-              99 Margaret Corbin Drive
-              <br />
-              Fort Tryon Park
-              <br />
-              New York, NY 10040
-            </span>
-          </p>
+        <div class="contacts__content">
+          <div class="contacts__branch">
+            <p class="contacts__branch-name">The Met Fifth Avenue</p>
+            <div class="contacts__info">
+              <p class="contacts__field">
+                <span class="contacts__label">Phone</span>
+                <br />
+                <span class="contacts__value">+1 212-535-7710</span>
+              </p>
+              <p class="contacts__field--address">
+                <span class="contacts__label">Address</span>
+                <br />
+                <span class="contacts__value--address">
+                  1000 Fifth Avenue
+                  <br />
+                  New York, NY 10028
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="contacts__branch">
+            <p class="contacts__branch-name">The Met Cloisters</p>
+            <div class="contacts__info">
+              <p class="contacts__field">
+                <span class="contacts__label">Phone</span>
+                <br />
+                <span class="contacts__value">+1 212-923-3700</span>
+              </p>
+              <p class="contacts__field--address">
+                <span class="contacts__label">Address</span>
+                <br />
+                <span class="contacts__value--address">
+                  99 Margaret Corbin Drive
+                  <br />
+                  Fort Tryon Park
+                  <br />
+                  New York, NY 10040
+                </span>
+              </p>
+            </div>
+          </div>
+          <form
+            action="#"
+            class="contacts__form"
+          >
+            <input
+              class="contacts__name"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              class="contacts__email"
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <textarea
+              class="contacts__message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+            <input
+              class="contacts__send"
+              type="submit"
+              value="Send"
+            />
+          </form>
         </div>
       </section>
     </div>

@@ -11,13 +11,15 @@
   &__header,
   &__schedule,
   &__exhibitions,
-  &__online-content {
+  &__online-content,
+  &__contacts {
     margin: auto;
   }
 
   &__schedule,
   &__exhibitions,
-  &__online-content {
+  &__online-content,
+  &__contacts {
     margin-top: 140px;
   }
 }

@@ -1,6 +1,7 @@
 .schedule {
-  max-width: 1020px;
-  padding: 0 120px;
+  box-sizing: border-box;
+  max-width: $max-width;
+  padding: 0 $margin-width;
   font-family: $default-font;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
