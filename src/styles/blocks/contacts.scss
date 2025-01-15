@@ -1,11 +1,8 @@
 .contacts {
-  box-sizing: border-box;
-  max-width: $max-width;
-  padding: 0 $margin-width;
-  font-family: $default-font;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: $gutter-width;
+  $input-padding: 16px;
+  $input-border-width: 1px;
+
+  @include grid-container;
 
   &__title {
     margin: 0;
@@ -21,7 +18,7 @@
     grid-column: 1 / 13;
     display: grid;
     grid-template-columns: subgrid;
-    margin: 48px;
+    margin-top: 48px;
   }
 
   &__branch {
@@ -71,27 +68,26 @@
     flex-direction: column;
   }
 
+  // &__input {
+  //   height: 48px;
+  //   border: none;
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   line-height: 27px;
+  // }
+
+  // &__input--email {
+  //   margin-top: 16px;
+  // }
+
+  // &__input--message {
+  //   margin-top: 16px;
+  //   height: 144px;
+  // }
+
   &__input {
-    height: 48px;
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 27px;
-  }
-
-  &__input--email {
-    margin-top: 16px;
-  }
-
-  &__input--message {
-    margin-top: 16px;
-    height: 144px;
-  }
-
-  &__name,
-  &__email,
-  &__message {
-    padding: 0 16px;
+    box-sizing: border-box;
+    padding: 0 $input-padding;
     background-color: #f8f8fa;
     font-size: 14px;
     font-weight: 400;
@@ -100,18 +96,30 @@
     line-height: 20px;
   }
 
-  &__name {
-    height: 48px;
-    border: none;
+  &__input::placeholder {
+    color: #7e7e83;
   }
 
-  &__email {
+  &__input:hover {
+    padding: $input-padding - $input-border-width;
+    border: $input-border-width solid #d5d7de;
+  }
+
+  &__input:active {
+    padding: $input-padding - $input-border-width;
+    border: $input-border-width solid #161616;
+  }
+
+  &__input--name {
     height: 48px;
-    border: none;
+  }
+
+  &__input--email {
+    height: 48px;
     margin-top: 16px;
   }
 
-  &__message {
+  &__input--message {
     padding: {
       top: 16px;
       bottom: 16px;
@@ -119,15 +127,8 @@
 
     box-sizing: border-box;
     height: 144px;
-    border: none;
     margin-top: 16px;
     resize: none;
-  }
-
-  &__name::placeholder,
-  &__email::placeholder,
-  &__message::placeholder {
-    color: #7e7e83;
   }
 
   &__send {
@@ -140,5 +141,13 @@
     color: #fff;
     line-height: 27px;
     margin-top: 34px;
+  }
+
+  &__send:hover {
+    background-color: #ae1c23;
+  }
+
+  &__send:active {
+    background-color: #eb343d;
   }
 }

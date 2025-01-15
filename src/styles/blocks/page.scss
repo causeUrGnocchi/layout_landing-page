@@ -22,4 +22,14 @@
   &__contacts {
     margin-top: 140px;
   }
+
+  &__footer {
+    box-sizing: border-box;
+    padding: 0 $margin-width;
+    background-image: url('../images/footer.png');
+    background-position: center;
+    max-width: $max-width;
+    height: 359px;
+    margin-top: 150px;
+  }
 }

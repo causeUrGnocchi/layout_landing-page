@@ -1,19 +1,14 @@
 @import 'variables';
 
 .header {
-  box-sizing: border-box;
-  max-width: 1260px;
+  @include grid-container;
+
   height: 840px;
-  padding: 0 120px;
-  font-family: $default-font;
   background-image: url('../images/welcome.png');
   background-position: center;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: none;
   grid-auto-rows: min-content;
-  column-gap: 24px;
 
   &__top {
     max-width: 1020px;
@@ -34,6 +29,7 @@
     letter-spacing: -1.5px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     margin: 0;
   }
 

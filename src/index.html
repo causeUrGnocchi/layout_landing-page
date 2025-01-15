@@ -23,13 +23,18 @@
     <div class="page__container">
       <header class="header page__header">
         <div class="header__top">
-          <p class="header__logo">the met</p>
+          <a
+            class="header__logo"
+            href="#"
+          >
+            THE MET
+          </a>
           <nav class="header__nav">
             <ul class="header__links">
               <li class="header__link--contact-wrapper">
                 <a
                   class="header__link header__link--contact"
-                  href="#menu"
+                  href="#"
                 ></a>
                 <div class="header__contacts">
                   <p class="header__contact">
@@ -55,6 +60,12 @@
         </div>
         <h1 class="header__title">Welcome to The MET</h1>
       </header>
+      <aside
+        class="menu"
+        id="menu"
+      >
+        <header class="menu__header"></header>
+      </aside>
       <section class="schedule page__schedule">
         <header class="schedule__header">
           <p class="schedule__subtitle">Plan your visit</p>
@@ -267,34 +278,40 @@
           <form
             action="#"
             class="contacts__form"
+            id="contacts__form"
           >
             <input
-              class="contacts__name"
+              class="contacts__input contacts__input--name"
               type="text"
               name="name"
               id="name"
               placeholder="Name"
             />
             <input
-              class="contacts__email"
+              class="contacts__input contacts__input--email"
               type="text"
               name="email"
               id="email"
               placeholder="Email"
             />
             <textarea
-              class="contacts__message"
+              class="contacts__input contacts__input--message"
               id="message"
               placeholder="Message"
+              form="contacts__form"
             ></textarea>
-            <input
+            <button
               class="contacts__send"
               type="submit"
-              value="Send"
-            />
+              form="contacts__form"
+              value="Submit"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </section>
+      <footer class="page__footer"></footer>
     </div>
   </body>
 </html>

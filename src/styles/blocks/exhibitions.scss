@@ -1,11 +1,5 @@
 .exhibitions {
-  box-sizing: border-box;
-  max-width: $max-width;
-  padding: 0 $margin-width;
-  font-family: $default-font;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: $gutter-width;
+  @include grid-container;
 
   &__header {
     display: grid;
@@ -80,5 +74,13 @@
     text-align: center;
     grid-column: 5 / 9;
     margin-top: 40px;
+  }
+
+  &__view-all:hover {
+    background-color: #ae1c23;
+  }
+
+  &__view-all:active {
+    background-color: #eb343d;
   }
 }
